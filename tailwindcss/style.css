@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.shadow-class{
+    z-index: -1;
+}
+
+.herotext p{
+    max-width: 540px;
+}
+
+
+.fadeable {
+    @apply .w-full .fixed .z-30 .inset-0;
+    height: 0;
+    overflow: hidden;
+}
+
+.fade-in {
+    height: 100%;
+    transition:             height 1s;
+        -moz-transition:    height 1s;
+        -ms-transition:     height 1s;
+        -o-transition:      height 1s;
+        -webkit-transition: height 1s;
+}
+.fade-out {
+    height: 0;
+    transition:             height 1s;
+        -moz-transition:    height 1s;
+        -ms-transition:     height 1s;
+        -o-transition:      height 1s;
+        -webkit-transition: height 1s;
+}
+
+.bg-overlay{
+    z-index: -1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* sidenav */
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+.sidenav button{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main{
+    margin-left: 160px;
+}
